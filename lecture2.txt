@@ -99,16 +99,25 @@ List of Nums:10,20,30
 >>> txt[0]=int(txt[0])
 >>> txt
 [10, '20', '30']
->>>
 
 >>> list(map(int,input().split(',')))
 10,20,30
 [10, 20, 30]
->>>
-
 
 >>> arr=list((1,4,9,6))
 >>> arr
 [1, 4, 9, 6]
+
+>>> list(map(int,['10','20','30']))
+[10, 20, 30]
+>>>>>> list(map(int,['10','20','30']))
+[10, 20, 30]
+
+>>> arr=['10','20','30']    #Define arr
+>>> mp=map(int,arr)          #Elementwise op
+>>> mp
+<map object at 0x000001D22E8358A0>
 >>>
+>>> list(mp)         #convert to list
+[10, 20, 30]
 >>>
